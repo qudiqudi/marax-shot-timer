@@ -391,7 +391,7 @@ String getTimer() {
   char outMin[4];
   if (timerStarted) {
     timerCount = (millis() - timerStartMillis ) / 1000;
-    if (timerCount > 15) {
+    if (timerCount > 25) {
       prevTimerCount = timerCount;
       currentShotValid = true;
     }
